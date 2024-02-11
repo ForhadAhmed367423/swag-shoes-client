@@ -8,8 +8,8 @@ import { getItemFromLS } from "../../Hooks & Functions/locaStorage";
 const AllOrders = () => {
 
 
-    const token = getItemFromLS("token")
-    const axios = UseAxios()
+    const token = getItemFromLS("token");
+    const axios = UseAxios();
 
 
 
