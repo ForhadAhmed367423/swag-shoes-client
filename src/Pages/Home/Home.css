@@ -1,0 +1,156 @@
+.sliderCon {
+    width: 1300px;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+
+.newArrivalWrapper {
+    width: 1300px;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.newArrivalWrapperV2 {
+    display: none !important;
+}
+
+
+
+.arrivalSlider {
+    width: 1300px !important;
+    background-color: white;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.productCard {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    cursor: pointer;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.126);
+}
+
+
+.newArrivalImg {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.productCard:hover .newArrivalImg {
+    height: 300px;
+}
+
+.productCard .newArrivalImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.arrivalDetails {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 7px 0 0 10px;
+}
+
+
+.arrivalBuy {
+    color: white;
+    background-color: black;
+    padding: 5px 30px;
+    transition: 0.3s;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.arrivalBuy:hover {
+    box-shadow: inset 100px 0 white;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .newArrivalWrapperV2 {
+        width: 90vw;
+        display: block !important;
+        margin: auto;
+    }
+
+    .newArrivalWrapper {
+        display: none;
+    }
+
+    .arrivalSlider {
+        width: 90vw !important;
+    }
+
+    .productCard {
+        height: 200px;
+    }
+
+    .productCard:hover .newArrivalImg {
+        height: 100px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 780px) {
+    .newArrivalWrapperV2 {
+        width: 90vw;
+        display: block !important;
+        margin: auto;
+    }
+
+    .newArrivalWrapper {
+        display: none;
+    }
+
+    .arrivalSlider {
+        width: 90vw !important;
+    }
+
+    .productCard {
+        height: 300px;
+    }
+
+    .productCard:hover .newArrivalImg {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1050px) {
+    .newArrivalWrapperV2 {
+        width: 90vw;
+        display: block !important;
+        margin: auto;
+    }
+
+    .newArrivalWrapper {
+        display: none;
+    }
+
+    .arrivalSlider {
+        width: 90vw !important;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1350px) {
+    .newArrivalWrapper {
+        width: 1000px;
+    }
+
+    .arrivalSlider {
+        width: 1000px !important;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {}

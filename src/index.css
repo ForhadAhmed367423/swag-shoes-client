@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+
+.hide {
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

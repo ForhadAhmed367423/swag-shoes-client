@@ -1,0 +1,171 @@
+.bro_wrapper {
+    width: calc(1300px - 44px);
+    padding: 22px;
+    margin: 20px auto;
+    background: white;
+}
+
+
+.swipperCardCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 0 0 0;
+}
+
+
+.categoryCards {
+    display: grid;
+    grid-template-columns: repeat(2, 375px);
+    gap: 20px 10px;
+}
+
+
+.categoryCard {
+    box-shadow: 0 2px 16.8px 3.2px #00264214;
+    position: relative;
+    width: 375px;
+    height: 240px;
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.categoryCard:hover {
+    border: 1px solid black;
+}
+
+.categoryCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.categoryCard h1 {
+    position: absolute;
+    width: 100%;
+    top: 37px;
+    font-size: 22px;
+    color: #353535;
+    left: 20px;
+}
+
+
+
+
+/* ---------- */
+.swipperCard {
+    width: 460px;
+}
+
+
+.swipperIMG {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ----------- */
+
+
+.swipperCard .swiper-slide-visible {
+    height: 503px;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .swipperCardCon {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .bro_wrapper {
+        width: 90vw;
+    }
+
+    .swipperCard {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .swiper-horizontal {
+        height: 100%;
+    }
+
+    .categoryCards {
+        width: 100%;
+        grid-template-columns: repeat(2, 44vw);
+    }
+
+    .categoryCard {
+        width: 43vw;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1020px) {
+    .swipperCardCon {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+
+    .bro_wrapper {
+        width: 90vw;
+    }
+
+    .swipperCard {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .swiper-horizontal {
+        height: 100%;
+    }
+
+    .categoryCards {
+        width: 100%;
+        grid-template-columns: repeat(2, 44.5vw);
+    }
+
+    .categoryCard {
+        width: 44.5vw;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1350px) {
+    .swipperCardCon {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .bro_wrapper {
+        width: calc(100vw - 44px);
+    }
+
+    .swipperCard {
+        width: 1000px;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .swiper-horizontal {
+        height: 100%;
+    }
+
+    .categoryCards {
+        grid-template-columns: repeat(2, 494px);
+    }
+
+    .categoryCard {
+        width: 494px;
+    }
+}
+
+@media screen and (min-width: 1921px) {}

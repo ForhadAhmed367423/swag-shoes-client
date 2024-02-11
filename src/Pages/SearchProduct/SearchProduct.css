@@ -1,0 +1,115 @@
+.searchItemContainer {
+    padding: 120px 0 50px 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.searchProductWrapper {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 350px);
+}
+
+
+.searchItemContainer h1 {
+    width: 1090px;
+}
+
+
+.searchFilterbox {
+    width: 1090px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin: 85px 0 0px 0;
+}
+
+
+.searchFilterbox select {
+    width: 200px;
+    font-size: 18px;
+    padding: 4px 0px;
+    outline: none;
+}
+
+
+.searchFilterbox button {
+    padding: 8px 10px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+}
+
+.searchFilterbox .couponActive {
+    background: #ff7d00;
+    color: white;
+    border: 1px solid black !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: black !important;
+}
+
+
+
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (min-width: 401px) and (max-width: 720px) {}
+
+@media screen and (min-width: 721px) and (max-width: 1280px) {}
+
+@media screen and (min-width: 181px) and (max-width: 735px) {
+    .searchProductWrapper {
+        grid-template-columns: repeat(1, 350px);
+
+    }
+
+    .searchFilterbox {
+        width: 350px;
+    }
+
+    .searchItemContainer h1 {
+        width: 350px;
+        font-size: 21px;
+    }
+
+    .searchFilterbox select {
+        width: 120px;
+    }
+
+    .searchFilterbox p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 735px) and (max-width: 1120px) {
+    .searchProductWrapper {
+        grid-template-columns: repeat(2, 350px);
+
+    }
+
+    .searchFilterbox {
+        width: 720px;
+    }
+
+    .searchItemContainer h1 {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 1921px) {}
